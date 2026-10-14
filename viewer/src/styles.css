@@ -1,0 +1,70 @@
+:root {
+  --ink: #22324a;
+  --sky-top: #a7c8e6;
+  --sky-bottom: #f6e2d2;
+  font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(var(--sky-top), var(--sky-bottom));
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+.iso-labels {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  pointer-events: none;
+  container-type: inline-size;
+}
+
+.iso-label {
+  position: absolute;
+  translate: -50% -50%;
+  color: var(--ink);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.reference-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.kiosk-fullscreen {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  color: var(--ink);
+  background: rgb(255 255 255 / 0.8);
+  box-shadow: 0 2px 10px rgb(34 50 74 / 0.15);
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.kiosk-fullscreen.is-idle {
+  opacity: 0;
+  pointer-events: none;
+}

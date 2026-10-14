@@ -1,0 +1,15 @@
+{
+  "image": [1200, 800],
+  "points": [
+    {"name": "island front-right corner, snow edge", "pixel": [768, 648], "world": [13, 0, 6]},
+    {"name": "island front-right corner, underside", "pixel": [768, 666], "world": [13, -0.6, 6]},
+    {"name": "island front corner, snow edge", "pixel": [456, 612], "world": [5, 0, 11]},
+    {"name": "summit front corner, top", "pixel": [968, 388], "world": [9.5, 2.6, -5.8]},
+    {"name": "summit front corner, foot", "pixel": [968, 464], "world": [9.5, 0, -5.8]},
+    {"name": "hotel base front-left", "pixel": [698, 323], "world": [-2.0, 0, -6.1]},
+    {"name": "hotel base front-right", "pixel": [819, 383], "world": [3.0, 0, -6.1]},
+    {"name": "valley station base front-left", "pixel": [643, 557], "world": [6.6, 0, 4.8]},
+    {"name": "valley station base front-right", "pixel": [691, 581], "world": [8.6, 0, 4.8]},
+    {"name": "red chalet base front-right", "pixel": [408, 360], "world": [-6.5, 0, 1.5]}
+  ]
+}
